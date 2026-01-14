@@ -1,3 +1,13 @@
+section{
+    margin-bottom: 30px;
+    padding: 10px;
+}
+h2{
+    border-bottom: 2px solid#333;
+    padding-bottom: 5px;
+    color: #333;
+}
+
 .site-header{
     padding: 30px 0 20px;
     background-color: #fff;
