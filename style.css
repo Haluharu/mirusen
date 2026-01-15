@@ -252,24 +252,25 @@ h2{
         width: 100%;
         text-align: center;
     }
-    .nav-list ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    border-top: 1px solid #ddd; 
-}
+   .nav-list ul {
+    border-top: 1px solid #ddd;
+    padding: 0; 
+    margin: 0 auto; 
+    width: 100%; 
+    }
 
-.nav-list li {
-    border-bottom: 1px solid #ddd; /
-}
+    .nav-list li {
+    border-bottom: 1px solid #ddd;
+    text-align: center; 
+    }
 
-.nav-list a {
+    .nav-list a {
     display: block;
-    padding: 15px 20px;
+    padding: 12px 0; 
     text-decoration: none;
     color: #333;
-    transition: background-color 0.2s;
-}
+    font-size: 15px; 
+    }
 
 .nav-list a:hover {
     background-color: #f9f9f9;
