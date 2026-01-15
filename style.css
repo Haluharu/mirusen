@@ -162,3 +162,28 @@ h2{
     font-weight: bold;
     margin-bottom: 0;
 }
+.saite-footer{
+    background-color: #333;
+    color: #fff;
+    padding: 30px 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+.footer-nav{
+    margin-bottom: 20px;
+}
+.footer-nav-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer-nav-list a:hover{
+    text-decoration: underline;
+}
+.copyright{
+    font-size: 0.8rem;
+    color: #aaa;
+}
