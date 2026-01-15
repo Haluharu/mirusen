@@ -232,3 +232,67 @@ h2{
     font-size: 0.8rem;
     color: #aaa;
 }
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    header {
+        padding: 15px 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .nav-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #ddd; 
+}
+
+.nav-list li {
+    border-bottom: 1px solid #ddd; /
+}
+
+.nav-list a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.2s;
+}
+
+.nav-list a:hover {
+    background-color: #f9f9f9;
+}
+
+    .container, .survey-container {
+        padding: 20px 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.2rem; }
+
+    .survey-button {
+        display: block; 
+        width: 100%;
+        padding: 20px 0; 
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
