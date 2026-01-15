@@ -61,6 +61,51 @@ h2{
 .nav-item:hover{
     background-color: #f5f5f5;
 }
+.survey-section{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.survey-container{
+    background-color: #f0f7ff;
+    border: 2px solid#007bff;
+    border-radius: 12px;
+    padding: 40px 20px;
+    text-align: center;
+}
+.survey-title{
+    font-size: 1.4rem;
+    color: #007bff;
+    border: none;
+    padding: 0;
+}
+.survey-text{
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 30px;
+}
+.survey-button-wrapper{
+    margin-bottom: 20px;
+}
+.survey-button{
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 16px 32px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    transition: transform 0.2s,background-color 0.2s;
+    box-shadow: 0 4px 15px rgba(0,123,255,0.3);
+}
+.survey-button:hover{
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+.survey-note{
+    font-size: 0.8rem;
+    color: #666;
+}
 .election-stats{
     margin-top: 40px;
     margin-bottom: 60px;
