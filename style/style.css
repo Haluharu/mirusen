@@ -149,6 +149,12 @@ h2{
     margin-left: 5px;
     color: #888;
 }
+.stats-date-caption {
+    font-size: 0.7em; /* 文字を小さく */
+    font-weight: normal; /* 太字を解除 */
+    color: #666; /* 少し薄い色に */
+    margin-top: 2px;
+}
 .stats-row.highlight{
     background-color: #f0fff4;
 }
