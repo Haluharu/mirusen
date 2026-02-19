@@ -11,51 +11,52 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/og-image.jpg">
     <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="./images/favicon2.png.jpg" type="image/png">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4PCVFN9LHY"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
 
-    // ① 最初はすべての計測（Cookie）を「拒否」に設定しておく
-    gtag('consent', 'default', {
-        'ad_storage': 'denied',
-        'analytics_storage': 'denied'
-    });
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied'
+        });
 
-    gtag('js', new Date());
-    gtag('config', 'G-4PCVFN9LHY');
+        gtag('js', new Date());
+        gtag('config', 'G-4PCVFN9LHY'); 
 
-    // ② 同意・拒否の判定スクリプト
-    window.onload = function() {
-        if (!localStorage.getItem('cookie_choice')) {
-            document.getElementById('cookie-banner').style.display = 'block';
-        } else if (localStorage.getItem('cookie_choice') === 'accepted') {
+        window.onload = function() {
+            var banner = document.getElementById('cookie-banner');
+            if (banner) {
+                if (!localStorage.getItem('cookie_choice')) {
+                    banner.style.display = 'block';
+                } else if (localStorage.getItem('cookie_choice') === 'accepted') {
+                    updateConsent(true);
+                }
+            }
+        };
+
+        function acceptCookie() {
+            localStorage.setItem('cookie_choice', 'accepted');
             updateConsent(true);
+            document.getElementById('cookie-banner').style.display = 'none';
         }
-    };
 
-    function acceptCookie() {
-        localStorage.setItem('cookie_choice', 'accepted');
-        updateConsent(true);
-        document.getElementById('cookie-banner').style.display = 'none';
-    }
-
-    function denyCookie() {
-        localStorage.setItem('cookie_choice', 'denied');
-        document.getElementById('cookie-banner').style.display = 'none';
-    }
-
-    function updateConsent(isAccepted) {
-        if (isAccepted) {
-            // 同意されたら設定を「許可」にアップデートする
-            gtag('consent', 'update', {
-                'analytics_storage': 'granted'
-            });
+        function denyCookie() {
+            localStorage.setItem('cookie_choice', 'denied');
+            document.getElementById('cookie-banner').style.display = 'none';
         }
-    }
+
+        function updateConsent(isAccepted) {
+            if (isAccepted) {
+                gtag('consent', 'update', {
+                    'analytics_storage': 'granted'
+                });
+            }
+        }
 </script>
 </head>
 <body>
