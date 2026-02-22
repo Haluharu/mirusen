@@ -110,6 +110,14 @@ h2{
     margin-top: 40px;
     margin-bottom: 60px;
 }
+.notice-text {
+  color: #ff0000;         
+  font-weight: bold;   
+  font-size: 24px;        
+  text-align: center;     
+  margin-top: 30px;       
+  margin-bottom: 20px;   
+}
 .current-election-name {
     font-size: 1.5rem;  
     font-weight: bold;    
@@ -330,6 +338,9 @@ h2{
 
     h1 { font-size: 1.5rem; }
     h2 { font-size: 1.2rem; }
+    .notice-text {
+    font-size: 18px;
+    }
 
     .survey-button {
         display: block; 
