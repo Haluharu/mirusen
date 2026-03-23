@@ -370,4 +370,19 @@ h2{
         max-width: 100%;
         height: auto;
     }
+    @media screen and (max-width: 440px) {
+    .candidate-name {
+        font-size: 1.2rem !important; 
+        white-space: nowrap;          
+    }
+
+    .candidate-meta {
+        font-size: 0.8rem !important;
+        flex-shrink: 0;      
+    }
+
+    .candidate-header {
+        gap: 5px;               
+    }
+}
 }
