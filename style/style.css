@@ -213,6 +213,7 @@ h2{
     height: auto;
     object-fit: cover;
     display: block;
+    border-radius: 4px;
 }
 .candidate-body{
     flex: 1;
