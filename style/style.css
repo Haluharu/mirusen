@@ -207,7 +207,6 @@ h2{
     width: 100px;
     height: auto;
     margin-right: 15px;
-    border: 3px solid #f0f0f0; 
 }
 .candidate-photo img {
     width: 100%;
@@ -334,7 +333,7 @@ h2{
 
     .candidate-photo {
         max-width: 100%;
-        height: auto;
+        max-height: 100%;
         margin: 0 auto 15px;
         display: block;
     }
