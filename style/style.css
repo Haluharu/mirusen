@@ -184,7 +184,9 @@ h2{
 .stats-row.highlight-date{
     background-color: #fff9e6;
 }
-
+.h3-title{
+    padding: 20px;
+}
 .candidate-card{
     background: #fff;
     border-radius: 12px;
@@ -316,11 +318,23 @@ h2{
     .nav-list {
         display: block;
         width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
     }
 
     .nav-item {
         border-right: none !important;
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid #ccc;
+        padding: 8px 0;
+    }
+        li.nav-item a {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+        text-decoration: none;
+        color: #333;
+        font-size: 15px;
     }
 
     .nav-item:last-child {
@@ -335,6 +349,7 @@ h2{
     .candidate-photo {
         max-width: 100%;
         max-height: 100%;
+        max-height: 180px;
         margin: 0 auto 15px;
         display: block;
     }
