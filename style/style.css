@@ -173,9 +173,9 @@ h2{
     color: #888;
 }
 .stats-date-caption {
-    font-size: 0.7em; /* 文字を小さく */
-    font-weight: normal; /* 太字を解除 */
-    color: #666; /* 少し薄い色に */
+    font-size: 0.7em; 
+    font-weight: normal; 
+    color: #666; 
     margin-top: 2px;
 }
 .stats-row.highlight{
@@ -229,6 +229,16 @@ h2{
 .candidate-name{
     font-size: 1.6rem;
     font-weight: bold;
+}
+.candidate-name ruby {
+    margin-right: 0.3em;
+}
+
+.candidate-name rt {
+    font-size: 0.45em;   
+    letter-spacing: 0;    
+    line-height: 1;  
+    color: #666;      
 }
 .candidate-meta{
     font-size: 1.1rem;
