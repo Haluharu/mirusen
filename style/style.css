@@ -229,6 +229,7 @@ h2{
 .candidate-name{
     font-size: 1.6rem;
     font-weight: bold;
+    padding-left:20px ;
 }
 .candidate-name ruby {
     margin-right: 0.3em;
