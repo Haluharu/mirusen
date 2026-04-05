@@ -133,6 +133,30 @@
     left: 0;
     color: #888;
 }
+/* X（旧Twitter）ボタンのスタイル */
+.x-link {
+    display: inline-block;
+    background-color: #000000; 
+    color: #ffffff !important;  
+    padding: 8px 16px;
+    border-radius: 20px;      
+    text-decoration: none !important;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+    border: 1px solid #ffffff; 
+}
+
+.x-link:hover {
+    background-color: #333333; 
+    opacity: 0.8;
+}
+
+/* スマホで青くなるのを防ぐ */
+.x-link, .x-link:visited, .x-link:active {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
 @media (max-width:600px) {
     .candidate-card{
         padding: 20px 15px;

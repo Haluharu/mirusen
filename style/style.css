@@ -377,13 +377,15 @@ h2{
     }
     .candidate-party{
         margin-left: 8px;
-
     }
 
     .candidate-meta {
         font-size: 0.9rem; 
         display: flex;
         gap: 8px;
+    }
+    .candidate-partylong{
+    font-size: 0.6rem;
     }
 
     .pledge-list li {
